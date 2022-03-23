@@ -1,0 +1,10 @@
+<p><%= link_to 'Reset Weather', '/weather', method: :delete %></p>
+<p><%= link_to 'Advance Time', '/weather', method: :post %></p>
+</br>
+
+<% @weathers.each do |weather| %>
+	<p>Precipitation: <%= weather.precipitation %></p>
+	<p>Wind: <%= weather.wind %></p>
+	<p>Time: <%= weather.time %></p>
+	</br>
+<% end %>
